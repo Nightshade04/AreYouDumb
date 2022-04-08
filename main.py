@@ -41,18 +41,21 @@ class Container(FloatLayout):
         self.add_widget(self.anchor_no_btn)
 
     def yesButtonPress(self, instance):
-        while True:
-            message = self.yes_messages[random.randint(0, 2)]
-            if message != self.message.text:
-                break
-        self.message.text = message
+        self.message.text = self.getDifferentMessage(self.yes_messages)
         self.remove_widget(self.anchor_no_btn)
 
     def noButtonPress(self, instance):
         instance.pos = (random.randint(0, 400), random.randint(0, 200))
         self.counter = self.counter + 1
         if self.counter % 5 == 0:
-            self.message.text = self.no_messages[random.randint(0, 3)]
+            self.message.text = self.getDifferentMessage(self.no_messages)
+
+    def getDifferentMessage(self, message_repo):
+        while True:
+            message = message_repo[random.randint(0, len(message_repo) - 1)]
+            if message != self.message.text:
+                break
+        return message
 
 
 class AreYouDumb(App):
