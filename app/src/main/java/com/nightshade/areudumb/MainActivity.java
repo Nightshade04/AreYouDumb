@@ -96,6 +96,7 @@ public class MainActivity extends AppCompatActivity {
         yesCounter += 1;
         noButton.setVisibility(View.INVISIBLE);
         if(counter == 12) {
+            counter += 1;
             Toast.makeText(this, "Fas Gaye!!! LOL", Toast.LENGTH_LONG).show();
         }
     }
