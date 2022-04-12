@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="323dp"
+        android:layout_height="96dp"
+        android:layout_marginStart="53dp"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="44dp"
+        android:layout_marginBottom="622dp"
+        android:text="@string/are_you_dumb"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/yesButton"
+        android:layout_width="130dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="53dp"
+        android:layout_marginTop="330dp"
+        android:layout_marginEnd="228dp"
+        android:layout_marginBottom="352dp"
+        android:onClick="yesButtonClick"
+        android:text="@string/yes"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/noButton"
+        android:layout_width="123dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="244dp"
+        android:layout_marginTop="331dp"
+        android:layout_marginEnd="44dp"
+        android:layout_marginBottom="353dp"
+        android:onClick="noButtonClick"
+        android:text="@string/no"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/resetButton"
+        android:layout_width="314dp"
+        android:layout_height="69dp"
+        android:layout_marginStart="53dp"
+        android:layout_marginTop="599dp"
+        android:layout_marginEnd="44dp"
+        android:layout_marginBottom="63dp"
+        android:onClick="resetButtonClick"
+        android:text="@string/reset"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
